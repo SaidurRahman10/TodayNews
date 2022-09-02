@@ -1,17 +1,125 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todays News</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Today's News</title>
+
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="images/favico.png" type="image/x-icon" />
+    <!-- Google Fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CDN & Configuration-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              fav: "#5D5FEF",
+              myChose: "#777777",
+              starColor: "#facc15",
+              starColor2: "#fef08a",
+            },
+          
+          },
+        },
+      };
+    </script>
+
+    <!-- This style only create for  fonts add  -->
+    <style>
+      body{
+        background-color: #F6F6F6;
+        font-family: "Poppins", sans-serif;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <!-- Header Start -->
+
+    <header>
+        
+<nav class="  border-gray-200 px-2 sm:px-4 py-2.5 rounded bg-white:bg-gray-900">
+    <div class="container flex flex-wrap justify-between items-center w-11/12 mx-auto">
+      <a href="https://flowbite.com/" class="flex items-center">
+        
+          <span class="self-center text-xl font-semibold whitespace-nowrap bg-fav text-white px-3 py-2 rounded-md mr-2">
+            Today's
+          </span><span class="self-center text-xl font-semibold whitespace-nowrap text-black "> News</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="blcok lg:flex">
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="text-base  font-bold text-fav hover:text-primary py-2 lg:inline-flex flex lg:ml-12 hover:text-blue-500"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#Course"
+                class="text-base  font-bold text-dark hover:text-primary py-2 lg:inline-flex flex lg:ml-12 hover:text-blue-500"
+              >
+                News
+              </a>
+            </li>
+            <li>
+              <a
+                href="#working"
+                class="text-base font-bold text-dark hover:text-primary py-2 lg:inline-flex flex lg:ml-12 hover:text-blue-500"
+              >
+                Blog
+              </a>
+            </li>
+          
+            <li>
+              <a
+                href="#FAQ"
+                class="text-base  font-bold text-dark hover:text-primary py-2 lg:inline-flex flex lg:ml-12 hover:text-blue-500"
+              >
+                FAQ
+              </a>
+            </li>
+       
+     
+          </ul>
+      </div>
+    </div>
+    <hr class="mt-5 ">
+</nav>
+<!-- ====== Navbar Section End -->
+    </header>
 
 
+  
 
 
-
-
+ 
+    <!-- FontAwesome Link -->
+    <script
+      src="https://kit.fontawesome.com/78f5cb1b5e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Tailwind Component Flowbite -->
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"
+    ></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
