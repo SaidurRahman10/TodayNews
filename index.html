@@ -1,244 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title>Today's News</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">  
 
-    <!-- Fav Icon -->
-    <link rel="shortcut icon" href="images/favico.png" type="image/x-icon" />
-    <!-- Google Fonts Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Tailwind CDN & Configuration-->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              fav: "#5D5FEF",
-              newBg: "#EEEFFF",
-              starColor: "#facc15",
-              starColor2: "#fef08a",
-            },
-          
-          },
-        },
-      };
-    </script>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- This style only create for  fonts add  -->
-    <style>
-      body{
-        background-color: #F6F6F6;
-        font-family: "Poppins", sans-serif;
-      }
-     
-    </style>
-  </head>
-  <body>
-    <!-- Header Start -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <header>
-        
-<nav class="  border-gray-200 px-2 sm:px-4 py-2.5 rounded bg-white:bg-gray-900">
-    <div class="container flex flex-wrap justify-between items-center w-11/12 mx-auto">
-      <a href="https://flowbite.com/" class="flex items-center">
-        
-          <span class="self-center text-xl font-semibold whitespace-nowrap bg-fav text-white px-3 py-2 rounded-md mr-2">
-            Today's
-          </span><span class="self-center text-xl font-semibold whitespace-nowrap text-black "> News</span>
-      </a>
-      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="blcok flex gap-7">
-            <li>
-              <a
-                href="javascript:void(0)"
-                class="text-base  font-bold text-fav hover:text-primary py-2 lg:inline-flex flex  hover:text-blue-500"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#Course"
-                class="text-base  font-bold text-dark hover:text-primary py-2 lg:inline-flex flex  hover:text-blue-500"
-              >
-                News
-              </a>
-            </li>
-            <li>
-              <a
-                href="#working"
-                class="text-base font-bold text-dark hover:text-primary py-2 lg:inline-flex flex  hover:text-blue-500"
-              >
-                Blog
-              </a>
-            </li>
-          
-            <li>
-              <a
-                href="#FAQ"
-                class="text-base  font-bold text-dark hover:text-primary py-2 lg:inline-flex flex  hover:text-blue-500"
-              >
-                FAQ
-              </a>
-            </li>
-            <li>
-                <img class="w-10 h-10 rounded-full" src="img/ss.jpg" alt="" />
-            </li>
-       
-     
-          </ul>
-      </div>
-    </div>
-    <hr class="mt-5 ">
-</nav>
-<!-- ====== Navbar Section End -->
+    <!-- Fontawsome  -->
+    <script src="https://kit.fontawesome.com/89b64b928f.js" crossorigin="anonymous"></script>
+
+    <title>Todays News</title>
+</head>
+
+
+
+
+<body class="container">
+    <!-- Header -->
+    <header class="mb-5 ">
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand fs-" href="#"> <button
+                            class="bg-danger text-light fs-4 border-0 rounded">Todays</button>
+                        News</a>
+
+                    </button>
+                    <div>
+                        <button class="btn btn-outline-danger me-2" type="submit">Home</button>
+                        <button class="btn btn-outline-danger" type="submit"><a class="text-decoration-none" href="blog.html" target="_blank"
+                                class="text-decoration-none">Blog</a></button>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <hr>
+
+        <!-- Catagories  -->
+        <div>
+            <ul id="catagories" class="nav nav-pills nav-fill">
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="text-bold m-5" id="alert"><span id="hf">0</span> items found on This Catagorie</h3>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold" href="#">Short By View:</a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Default
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <button class="btn btn-primary me-2">Today's Pack</button>
+                            <button class="btn btn-outline-success" type="submit">Trending</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
+    <!-- Main Section -->
 
-    <main class="w-11/12 mx-auto ">
-        <!-- Catagories Section--------------------------------- -->
-        <section class="Catagories my-5">
-            <ul id="ulDiv" class="blcok flex justify-center gap-10">
-            
-              
-              </ul>
-        </section>
-         <!-- Catagories Section---------------------------------End-->
-
-       
-
-
-
-         <!-- howManyBlogShow---------------------------------Start-->
-
-
-
-         <section>
-            <div id="howManyBlogShow" class="bg-white h-16 rounded-lg mt-5 flex justify-center items-center text-xl font-bold">
-
+    <main>
+        <section>
+            <div class="card  my-5" id="card" style="max-width: 100%;">
             </div>
-         </section>
-
-<!-- ======================================News SHow Section========================= -->
-<br>
-
-<section id="news-card">
-   
-</section>
-
-<!-- -----------------------------------------Modal----------------- -->
-
-
-  
-<!-- <button class="modal-open bg-transparent border border-gray-500 hover:border-indigo-500 text-gray-500 hover:text-indigo-500 font-bold py-2 px-4 rounded-full">Open Modal</button> -->
-  
-<!--Modal-->
-<div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
-  <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
-  
-  <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
-    
-    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-      <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-      </svg>
-      <span class="text-sm">(Esc)</span>
-    </div>
-
-    <!-- Add margin if you want to see some of the overlay behind the modal-->
-    <div class="modal-content py-4 text-left px-6">
-      <!--Title-->
-      <div class="flex justify-between items-center pb-3">
-        <p class="text-2xl font-bold">Simple Modal!</p>
-        <div class="modal-close cursor-pointer z-50">
-          <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-            <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-          </svg>
-        </div>
-      </div>
-
-      <!--Body-->
-      <div id="modal-body">
-        
-        <p>Modal content can go here</p>
-      </div>
-     
-      <!--Footer-->
-      <div class="flex justify-end pt-2">
-      
-        <button class="modal-close px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Close</button>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </section>
     </main>
+    <!-- Loader  -->
+    <section class="d-none" id="loader">
+        <div style="height: 400px;" class="d-flex justify-content-center align-items-center">
+            <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </section>
 
 
+    <!-- footer Section  -->
+    <footer class="">
+        <section>
+            <h3 class="bg-secondary mx-3 p-2 text-center fs-5 "> Copyright &copy; 2022 News Market</h3>
+        </section>
+    </footer>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-    <!-- FontAwesome Link -->
-    <script
-      src="https://kit.fontawesome.com/78f5cb1b5e.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- -------------Preline Component------------ -->
-  
-    <!-- Tailwind Component Flowbite -->
-    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
-    <script
-      defer
-      src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"
-    ></script>
-    <script src="js/common.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Js link  -->
     <script src="js/script.js"></script>
-  </body>
+    <script src="js/common.js"></script>
+
+</body>
+
 </html>
